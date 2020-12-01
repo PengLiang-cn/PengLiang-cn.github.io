@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yizhou Yu (* co-first authors) | Sibei Yang</title>
+    <link>https://sibeiyang.github.io/authors/yizhou-yu-co-first-authors/</link>
+      <atom:link href="https://sibeiyang.github.io/authors/yizhou-yu-co-first-authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Yizhou Yu (* co-first authors)</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://sibeiyang.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Yizhou Yu (* co-first authors)</title>
+      <link>https://sibeiyang.github.io/authors/yizhou-yu-co-first-authors/</link>
+    </image>
+    
+    <item>
+      <title>Non-Local Context Encoder: Robust Biomedical Image Segmentation against Adversarial Attacks</title>
+      <link>https://sibeiyang.github.io/publication/nlce/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://sibeiyang.github.io/publication/nlce/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

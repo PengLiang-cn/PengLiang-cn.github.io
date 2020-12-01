@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Sibei Yang</title>
+    <link>https://sibeiyang.github.io/publication/</link>
+      <atom:link href="https://sibeiyang.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://sibeiyang.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Publications</title>
+      <link>https://sibeiyang.github.io/publication/</link>
+    </image>
+    
+    <item>
+      <title>Graph-Structured Referring Expressions Reasonig in The Wild</title>
+      <link>https://sibeiyang.github.io/publication/sgmn/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://sibeiyang.github.io/publication/sgmn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Relationship-Embedded Representation Learning for Grounding Referring Expressions</title>
+      <link>https://sibeiyang.github.io/publication/rerl/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://sibeiyang.github.io/publication/rerl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic Graph Attention for Referring Expression Comprehension</title>
+      <link>https://sibeiyang.github.io/publication/dga/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://sibeiyang.github.io/publication/dga/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cross-Modal Relationship Inference for Grounding Referring Expressions</title>
+      <link>https://sibeiyang.github.io/publication/cmrin/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://sibeiyang.github.io/publication/cmrin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Non-Local Context Encoder: Robust Biomedical Image Segmentation against Adversarial Attacks</title>
+      <link>https://sibeiyang.github.io/publication/nlce/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://sibeiyang.github.io/publication/nlce/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multi-Evidence Filtering and Fusion for Multi-Label Classification, Object Detection and Semantic Segmentation Based on Weakly Supervised Learning</title>
+      <link>https://sibeiyang.github.io/publication/meff/</link>
+      <pubDate>Fri, 01 Jun 2018 00:00:00 +0000</pubDate>
+      <guid>https://sibeiyang.github.io/publication/meff/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guanbin Li | Sibei Yang</title>
+    <link>https://sibeiyang.github.io/authors/guanbin-li/</link>
+      <atom:link href="https://sibeiyang.github.io/authors/guanbin-li/index.xml" rel="self" type="application/rss+xml" />
+    <description>Guanbin Li</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://sibeiyang.github.io/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Guanbin Li</title>
+      <link>https://sibeiyang.github.io/authors/guanbin-li/</link>
+    </image>
+    
+    <item>
+      <title>Graph-Structured Referring Expressions Reasonig in The Wild</title>
+      <link>https://sibeiyang.github.io/publication/sgmn/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://sibeiyang.github.io/publication/sgmn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ref-Reasoning</title>
+      <link>https://sibeiyang.github.io/dataset/ref-reasoning/</link>
+      <pubDate>Wed, 01 Apr 2020 00:00:00 +0000</pubDate>
+      <guid>https://sibeiyang.github.io/dataset/ref-reasoning/</guid>
+      <description>&lt;p&gt;Ref-Reasoning is a large-scale real-word dataset for grounding referring expressions,
+which contains 791,956 referring expressions in 83,989 images. It includes semantically rich expressions describing objects, attributes, direct relations and indirect relations with different reasoning layouts.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://sibeiyang.github.io/img/ref-reasoning_example.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;images-and-objects&#34;&gt;Images and Objects&lt;/h2&gt;
+&lt;p&gt;Ref-Reasoning is built on the scenes from the 
+&lt;a href=&#34;https://cs.stanford.edu/people/dorarad/gqa/about.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GQA dataset&lt;/a&gt; and share the same 
+&lt;a href=&#34;https://nlp.stanford.edu/data/gqa/allImages.zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;training images&lt;/a&gt; with GQA.
+We generate referring expressions according to the 
+&lt;a href=&#34;https://nlp.stanford.edu/data/gqa/sceneGraphs.zip&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;image scene graph annotations&lt;/a&gt; provided by the 
+&lt;a href=&#34;https://visualgenome.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Visual Genome dataset&lt;/a&gt; and further normalized by the GQA dataset.
+In oder to use the scene graphs for referring expression generation, we remove some unnatural edges and classes, e.g., &amp;ldquo;nose left of eyes&amp;rdquo;.
+In addition, we add edges between objects to represent same-attribute relations between objects, i.e., &amp;ldquo;same material&amp;rdquo;, &amp;ldquo;same color&amp;rdquo; and &amp;ldquo;same shape&amp;rsquo;&#39;.
+In total, there are 1,664 object classes, 308 relation classes and 610 attribute classes in the adopted scene graphs.&lt;/p&gt;
+&lt;p&gt;We provide the info and extracted visual features (
+&lt;a href=&#34;https://github.com/peteanderson80/bottom-up-attention&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;bottom-up features&lt;/a&gt;) from Faster R-CNN for ground-truth objects in the images.
+The 
+&lt;a href=&#34;https://drive.google.com/drive/folders/10woLRXMEHuiqyMrikRGMiBGNqRqo81HH?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;gt_objects&lt;/a&gt; contains:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;gt_objects_info.json&lt;/code&gt; is a dictionary from each image id to the info about the image and the image&amp;rsquo;s index in the h5 file.&lt;/li&gt;
+&lt;li&gt;The &lt;code&gt;gt_objects_*.h5&lt;/code&gt; includes objects&amp;rsquo; visual features and bounding boxes in pixels.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;expressions-and-referents&#34;&gt;Expressions and Referents&lt;/h2&gt;
+&lt;p&gt;Ref-Reasoning has 721,164, 36,183 and 34,609 expression-referent pairs for training, validation and testing, respectively.
+In order to generate referring expressions with diverse reasoning layouts,
+for each specified number of nodes, we design a family of referring expression templates for each reasoning layout.
+We generate expressions according to layouts and templates using functional programs,
+and the functional program for each template can be easily obtained according to the layout.
+An example of a triplet of layout, template and functional program is shown as below. Please see more details in section 4 of the paper.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://sibeiyang.github.io/img/ref-reasoning_template.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;In Ref-Reasoning 
+&lt;a href=&#34;https://drive.google.com/drive/folders/1w4qhQgrgUeGOr_wG5KP0yUouMzRNBAxo?usp=sharing&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;expressions&lt;/a&gt;,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;code&gt;*_expressions.json&lt;/code&gt; is a dictionary from each expression id to the info about the expression and its referent,
+including image id, referent id, referent&amp;rsquo;s bounding box in pixel, expression and the number of objects described by the expression.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;citation&#34;&gt;Citation&lt;/h2&gt;
+&lt;p&gt;If you find the work useful in your research, please consider citing:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;@inproceedings{yang2020graph-structured,
+  title={Graph-Structured Referring Expressions Reasoning in The Wild},
+  author={Yang, Sibei and Li, Guanbin and Yu, Yizhou},
+  journal={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
+  year={2020}
+}
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Relationship-Embedded Representation Learning for Grounding Referring Expressions</title>
+      <link>https://sibeiyang.github.io/publication/rerl/</link>
+      <pubDate>Sat, 01 Feb 2020 00:00:00 +0000</pubDate>
+      <guid>https://sibeiyang.github.io/publication/rerl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic Graph Attention for Referring Expression Comprehension</title>
+      <link>https://sibeiyang.github.io/publication/dga/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 +0000</pubDate>
+      <guid>https://sibeiyang.github.io/publication/dga/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cross-Modal Relationship Inference for Grounding Referring Expressions</title>
+      <link>https://sibeiyang.github.io/publication/cmrin/</link>
+      <pubDate>Sat, 01 Jun 2019 00:00:00 +0000</pubDate>
+      <guid>https://sibeiyang.github.io/publication/cmrin/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Non-Local Context Encoder: Robust Biomedical Image Segmentation against Adversarial Attacks</title>
+      <link>https://sibeiyang.github.io/publication/nlce/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://sibeiyang.github.io/publication/nlce/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
