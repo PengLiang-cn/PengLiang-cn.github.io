@@ -1,0 +1,344 @@
+/* Custom CSS for Peng Liang's Personal Website */
+/* Modern enhancements on top of Academic theme */
+
+:root {
+  --primary-color: #2962ff;
+  --secondary-color: #00b0ff;
+  --accent-color: #651fff;
+  --light-bg: #f8f9fa;
+  --dark-text: #212529;
+  --light-text: #6c757d;
+  --transition-speed: 0.3s;
+}
+
+/* Enhanced profile section */
+#profile {
+  position: relative;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: transform var(--transition-speed) ease;
+}
+
+#profile:hover {
+  transform: translateY(-5px);
+}
+
+.avatar-circle {
+  border: 5px solid white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all var(--transition-speed) ease;
+}
+
+.avatar-circle:hover {
+  transform: scale(1.05);
+  border-color: var(--secondary-color);
+}
+
+.portrait-title h2 {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.portrait-title h3 {
+  color: var(--light-text);
+  font-weight: 400;
+}
+
+/* Network icons enhancement */
+.network-icon {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.network-icon li {
+  list-style: none;
+}
+
+.network-icon a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: white;
+  border-radius: 50%;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: all var(--transition-speed) ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.network-icon a:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(41, 98, 255, 0.3);
+}
+
+/* Publication cards enhancement */
+.media.stream-item {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  transition: all var(--transition-speed) ease;
+  border-left: 4px solid var(--primary-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.media.stream-item:hover {
+  transform: translateX(5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.article-title a {
+  color: var(--dark-text);
+  text-decoration: none;
+  transition: color var(--transition-speed) ease;
+}
+
+.article-title a:hover {
+  color: var(--primary-color);
+}
+
+.article-style {
+  color: var(--light-text);
+  font-style: italic;
+}
+
+/* Competition section */
+#competition .media.stream-item {
+  border-left-color: var(--secondary-color);
+}
+
+/* Section headings */
+.section-heading h1 {
+  position: relative;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.section-heading h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+/* About me text styling */
+#about h1 {
+  color: var(--primary-color);
+  margin-bottom: 1.5rem;
+}
+
+#about p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--dark-text);
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+  #profile {
+    padding: 1.5rem;
+  }
+  
+  .network-icon {
+    gap: 1rem;
+  }
+  
+  .network-icon a {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+  
+  .section-heading h1 {
+    font-size: 1.8rem;
+  }
+}
+
+/* Footer enhancement */
+.site-footer {
+  background: var(--light-bg);
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+.powered-by {
+  color: var(--light-text);
+  font-size: 0.9rem;
+}
+
+.back-to-top {
+  color: var(--primary-color);
+  transition: color var(--transition-speed) ease;
+}
+
+.back-to-top:hover {
+  color: var(--accent-color);
+}
+
+/* Animation for page load */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.home-section {
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.home-section.visible {
+  opacity: 1;
+}
+
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+}
+
+/* Dark theme support */
+.dark-theme {
+  --light-bg: #1a1a1a;
+  --dark-text: #f0f0f0;
+  --light-text: #b0b0b0;
+  background-color: #121212;
+  color: var(--dark-text);
+}
+
+.dark-theme #profile {
+  background: linear-gradient(135deg, #2d2d2d 0%, #1f1f1f 100%);
+}
+
+.dark-theme .media.stream-item {
+  background: #2d2d2d;
+  border-color: var(--secondary-color);
+}
+
+.dark-theme .skill-item {
+  background: #2d2d2d;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.dark-theme .skill-item:hover {
+  background: var(--secondary-color);
+  color: #2d2d2d;
+}
+
+/* Skills section styling */
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill-item {
+  background: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: all var(--transition-speed) ease;
+}
+
+.skill-item:hover {
+  background: var(--primary-color);
+  color: white;
+  transform: translateY(-2px);
+}
+
+/* Timeline styling */
+.timeline {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: var(--primary-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2rem;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  border: 3px solid white;
+  box-shadow: 0 0 0 3px var(--primary-color);
+}
+
+.timeline-date {
+  color: var(--light-text);
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content h4 {
+  color: var(--dark-text);
+  margin-bottom: 0.5rem;
+}
